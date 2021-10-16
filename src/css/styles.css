@@ -991,6 +991,26 @@
     
 }
 
+@media screen and (max-width: 860px) {
+    .cta .side {
+        flex-direction: column;
+    }
+
+    .whatsapp-logo {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .cta-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .chat {
         right: 20px;
@@ -1037,5 +1057,9 @@
 
     .section-title {
         margin-bottom: 40px;
+    }
+
+    .cta-text h2 {
+        font-size: 32px;
     }
 }
