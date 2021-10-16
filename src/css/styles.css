@@ -1030,4 +1030,12 @@
     .card h3 {
         font-size: 18px;
     }
+
+    .shop {
+        padding: 50px 10px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
 }
