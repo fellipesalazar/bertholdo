@@ -357,6 +357,28 @@
             slidesToScroll: 2,
             prevArrow: "<div class='p arrow prev flex centered'><i class='fas fa-chevron-left'></i></div>",
             nextArrow: "<div class='p arrow next flex centered'><i class='fas fa-chevron-right'></i></div>",
+            responsive: [
+                {
+                    breakpoint: 1050,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false
+                    }
+                }
+            ]
         });
 
         var phoneMaskBehavior = function (val) {

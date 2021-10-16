@@ -938,6 +938,19 @@
     .card {
         width: 50%;
     }
+
+    .products .arrow.prev {
+        left: -20px;
+    }
+    
+    .products .arrow.next {
+        right: -20px;
+    }
+
+    .products .arrow i {
+        background: #fff;
+        box-shadow: 0 0 8px rgba(0,0,0,.2);
+    }
 }
 
 @media screen and (max-width: 1050px) {
