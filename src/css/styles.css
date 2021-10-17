@@ -653,7 +653,7 @@
 }
 
 .r2 .input-content {
-    width: 50%;
+    width: calc(50% - 15px);
 }
 
 .row label {
@@ -1045,6 +1045,30 @@
     .registration h2 {
         max-width: 100%;
     }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer .element-container {
+        padding: 50px 20px;
+    }
+
+    .footer .columns {
+        flex-direction: column;
+    }
+
+    .menu-footer {
+        margin-bottom: 1em;
+    }
+
+    .unit {
+        margin: 1.25em 0;
+    }
+
+    li.space {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1113,5 +1137,20 @@
 
     .r2 .input-content:not(:last-child) {
         margin-bottom: 1.25em;
+    }
+
+    .chat {
+        bottom: -400px;
+    }
+
+    .footer-bar {
+        height: auto;
+        padding: 20px 80px;
+    }
+
+    .footer-bar p {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
     }
 }
