@@ -2,25 +2,25 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <!-- título da página -->
     <title>Seleção 2021/10 – Desenvolvedor Front-end</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="https://www.bertholdo.com.br/wp-content/themes/bertholdo-site-2018/assets/images/favicon.ico" sizes="32x32">
+    <!-- meta de responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- adicionando as fontes usadas no projeto - via Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=PT+Sans+Narrow:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!-- adicionando CDN do fontawesome -->
-    <script src="https://kit.fontawesome.com/5dd255bbbd.js" crossorigin="anonymous"></script>
-    <!-- adicionando CDN do jquery e jquery.mask -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- adicionando CDN do slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- adicionando folha de estilos -->
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
+    <!-- um container que envolve toda a página -->
     <div class="page-container">
+        <!-- menu mobile que é exibido em celulares -->
         <nav class="menu-mobile flex centered">
             <ul class="flex column centered">
                 <li><a href="#">Quem somos</a></li>
@@ -30,7 +30,9 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
+        <!-- header -->
         <header class="header">
+            <!-- barra superior com telefones de contato - exibido apenas no desktop -->
             <nav class="top-bar">
                 <div class="element-container">
                     <ul class="flex center end">
@@ -46,7 +48,9 @@
             <nav class="top-menu flex centered">
                 <div class="element-container">
                     <div class="flex between">
+                        <!-- logo -->
                         <a href="#" class="logo">LOGOTIPO</a>
+                        <!-- toggles de abertura/fechamento do menu mobile e caixa de pesquisa -->
                         <div class="toggles">
                             <div class="search flex centered"><i class="fas fa-search"></i></div>
                             <div class="box-search">
@@ -55,6 +59,7 @@
                             <i class="flex centered toggle fas fa-bars" id="toggleOn"></i>
                             <i class="flex centered toggle fas fa-times" id="toggleOff"></i>
                         </div>
+                        <!-- menu principal -->
                         <ul class="menu-desktop flex center end">
                             <li><a href="#">Quem somos</a></li>
                             <li><a href="#">Gôndolas <i class="fas fa-caret-down"></i></a></li>
@@ -70,7 +75,9 @@
                 </div>
             </nav>
         </header>
+        <!-- conteúdo principal do site -->
         <main class="content">
+            <!-- banners rotativos -->
             <div class="banners">
                 <div class="banner" style="background-image: url(assets/img/banner.jpg)">
                     <div class="element-container">
@@ -93,6 +100,7 @@
                     </div>
                 </div>
             </div>
+            <!-- cards abaixo dos banners -->
             <div class="cards flex stretch between">
                 <div class="card flex column centered">
                     <h3>Quer ser um colaborador ou representante?</h3>
@@ -111,9 +119,11 @@
                             <a class="btn rounded" href="#">FAÇA SEU CADASTRO</a>
                 </div>
             </div>
+            <!-- seção dos produtos -->
             <section class="shop">
                 <h2 class="section-title">Nossos produtos</h2>
                 <div class="element-container">
+                    <!-- slide rotativo dos produtos -->
                     <div class="products flex stretch between">
                         <div class="product flex column center start">
                             <figure class="img-product">
@@ -218,6 +228,7 @@
                     </div>
                 </div>
             </section>
+            <!-- call to action whatsapp -->
             <div class="cta">
                 <div class="element-container">
                     <div class="side flex centered">
@@ -232,6 +243,7 @@
                     </div>
                 </div>
             </div>
+            <!-- formulário de cadastro de revendedor -->
             <section class="registration">
                 <div class="element-container">
                     <div class="columns flex center between">
@@ -277,6 +289,7 @@
                 </div>
             </section>
         </main>
+        <!-- footer -->
         <footer class="footer">
             <div class="element-container">
                 <a href="#" class="logo-footer">LOGOTIPO</a>
@@ -320,9 +333,11 @@
                     </div>
                 </div>
             </div>
+            <!-- copyright -->
             <div class="footer-bar flex centered">
                 <p class="flex centered"><img src="assets/img/logo-bertholdo.webp" alt="logo bertholdo"> <u>VERSATTI WEB:</u> Você escolhe as funcionalidades do seu site de acordo com as necessidades de sua empresa. <span>VERSATTI WEB</span></p>
                 <div class="flex centered back-to-top"><i class="fas fa-chevron-up"></i></div>
+                <!-- chat -->
                 <div class="chat">
                     <div class="chat-header flex center between">
                         <span>ON-LINE! SÓ CHAMAR!</span>
@@ -340,108 +355,18 @@
                 </div>
             </div>
         </footer>
+        <!-- botão cta whatsapp -->
         <i class="go-to-whats fab fa-whatsapp"></i>
+        <!-- botão de abertura/fechamento do chat em smartphones -->
         <i class="open-chat far fa-comment"></i>
     </div>
-    <script>
-    
-        $(".banners").slick({
-            autoplay: true,
-            autoplaySpeed: 6000,
-            prevArrow: "<div class='arrow prev flex centered'><i class='fas fa-chevron-left'></i></div>",
-            nextArrow: "<div class='arrow next flex centered'><i class='fas fa-chevron-right'></i></div>",
-        });
-        
-        $(".products").slick({
-            autoplay: true,
-            autoplaySpeed: 8000,
-            slidesToShow: 4,
-            slidesToScroll: 2,
-            prevArrow: "<div class='p arrow prev flex centered'><i class='fas fa-chevron-left'></i></div>",
-            nextArrow: "<div class='p arrow next flex centered'><i class='fas fa-chevron-right'></i></div>",
-            responsive: [
-                {
-                    breakpoint: 1050,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 2,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false
-                    }
-                }
-            ]
-        });
-
-        var phoneMaskBehavior = function (val) {
-            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
-            },
-            phoneOptions = {
-                onKeyPress: function(val, e, field, options) {
-                    field.mask(phoneMaskBehavior.apply({}, arguments), options);
-                }
-            };
-
-            $('.phone').mask(phoneMaskBehavior, phoneOptions);
-
-            $(".chat-header, .open-chat").click(function(){
-                $(".chat, .chat-header .fas, .open-chat").toggleClass("open");
-            });
-
-            $(".back-to-top").click(function(){
-                $("html, body").animate({
-                    scrollTop: 0
-                });
-            });
-
-            $(".search").click(function(){
-                $(".box-search").fadeToggle(250);
-                $(".box-search input").focus();
-            });
-
-            function getDocHeight() {
-                var D = document;
-                return Math.max(
-                    D.body.scrollHeight, D.documentElement.scrollHeight,
-                    D.body.offsetHeight, D.documentElement.offsetHeight,
-                    D.body.clientHeight, D.documentElement.clientHeight
-                );
-            }
-
-            $(window).scroll(function() {
-                if($(window).scrollTop() + $(window).height() > getDocHeight() - 100) {
-                    $(".go-to-whats").addClass("bottom");
-                    $(".open-chat").addClass("bottom");
-                }else{
-                    $(".go-to-whats").removeClass("bottom");
-                    $(".open-chat").removeClass("bottom");
-                }
-            });
-
-            $("#toggleOn").click(function(){
-                $(this).hide();
-                $("#toggleOff").show().css("display","flex");
-                $(".menu-mobile").fadeIn(250).css("display","flex");
-            });
-
-            $("#toggleOff").click(function(){
-                $(this).hide();
-                $("#toggleOn").show().css("display","flex");
-                $(".menu-mobile").fadeOut(250);
-            });
-
-        
-    </script>
+    <!-- adicionando CDN do jquery e jquery.mask -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- adicionando CDN do fontawesome -->
+    <script src="https://kit.fontawesome.com/5dd255bbbd.js" crossorigin="anonymous"></script>
+    <!-- adicionando CDN do slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="src/js/scripts.js"></script>
 </body>
 </html>

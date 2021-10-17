@@ -1,6 +1,15 @@
-/* Fontes utilizadas no projeto */
+/*
+Developed by: Fellipe Salazar
+Site: sallazar.dev.br
+Contact: +55 61 99872-1647
+Version: 1.0
+Project: Seleção 2021/10 – Desenvolvedor Front-end - Bertholdo
+*/
+
+/* importação das fontes utilizadas no projeto */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=PT+Sans+Narrow:wght@700&family=Roboto:wght@100&display=swap');
 
+/* váriáveis */
 :root {
     /* fontes */
     --georgia: 'Georgia', serif;
@@ -31,6 +40,7 @@
     outline: none;
 }
 
+/* configuração dos containers */
 .page-container {
     width: 100%;
     min-height: 100vh;
@@ -48,7 +58,6 @@
 }
 
 /* algumas classes para meu auxílio durante o projeto */
-
 .flex { display: flex; }
 
 .flex.column { flex-direction: column }
@@ -71,18 +80,17 @@
 
 .flex.stretch { align-items: stretch; }
 
-.flex.centered {
-    align-items: center;
-    justify-content: center;
-}
+.flex.centered { align-items: center; justify-content: center; }
 
 /* *************************** */
 
+/* header */
 .header {
     width: 100%;
     position: relative;
 }
 
+/* top bar */
 .header .top-bar {
     width: 100%;
     height: 40px;
@@ -116,13 +124,7 @@
     color: var(--yellow);
 }
 
-
-
-
-
-
-
-
+/* top menu */
 .header .top-menu {
     width: 100%;
     height: 100px;
@@ -157,6 +159,7 @@
     border-color: var(--red-dark);
 }
 
+/* search */
 .search {
     background: #fff;
     width: 35px;
@@ -205,6 +208,7 @@
     border-color: var(--red-dark);
 }
 
+/* menu mobile */
 .menu-mobile {
     position: fixed;
     width: 100vw;
@@ -236,6 +240,7 @@
     color: var(--red-dark);
 }
 
+/* toggles */
 .toggles {
     display: none;
     align-items: center;
@@ -261,13 +266,7 @@
     display: none;
 }
 
-
-
-
-
-
-
-
+/* banners */
 .banners {
     width: 100%;
     height: 450px;
@@ -361,6 +360,7 @@
     margin-bottom: 2em;
 }
 
+/* botões */
 .btn {
     font-family: var(--pt-sans);
     line-height: 20px;
@@ -397,11 +397,7 @@
     filter: brightness(110%);
 }
 
-
-
-
-
-
+/* cards */
 .cards {
     width: 100%;
     flex-wrap: wrap;
@@ -437,11 +433,7 @@
     margin-bottom: 1em;
 }
 
-
-
-
-
-
+/* produtos */
 .shop {
     width: 100%;
     padding: 100px 10px 60px;
@@ -562,10 +554,7 @@
     line-height: 20px;
 }
 
-
-
-
-
+/* call to action */
 .cta {
     padding: 60px 10px;
     font-family: var(--roboto);
@@ -596,10 +585,7 @@
     margin-bottom: 2em;
 }
 
-
-
-
-
+/* formulario de cadastro */
 .registration {
     padding: 80px 10px;
     background: url(../../assets/img/back.png) center no-repeat;
@@ -684,11 +670,7 @@
     font-size: inherit;
 }
 
-
-
-
-
-
+/* footer */
 .footer {
     background: var(--black);
     padding: 50px 0 0;
@@ -802,6 +784,7 @@
     height: 60px;
 }
 
+/* chat */
 .chat {
     width: 300px;
     height: 400px;
@@ -892,9 +875,7 @@
     cursor: pointer;
 }
 
-
-
-
+/* botões cta */
 .go-to-whats {
     position: fixed;
     bottom: 20px;
@@ -922,10 +903,6 @@
     transform: scale(1.2)
 }
 
-
-
-
-
 .open-chat {
     position: fixed;
     bottom: 20px;
@@ -936,7 +913,7 @@
     color: #fff;
     font-size: 22px;
     border-radius: 50%;
-    display: none;
+    display: none !important;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -957,11 +934,11 @@
     transform: scale(1.2)
 }
 
+/* ************************************************ */
 
+/* configurações de responsividade - pontos de quebra */
 
-
-
-
+/* telas até 1375px de largura */
 @media screen and (max-width: 1375px) {
     .banners .element-container .flex {
         position: relative;
@@ -976,6 +953,7 @@
 
 }
 
+/* telas até 1230px de largura */
 @media screen and (max-width: 1230px) {
     .card {
         width: 50%;
@@ -995,6 +973,7 @@
     }
 }
 
+/* telas até 1050px de largura */
 @media screen and (max-width: 1050px) {
     .top-bar {
         display: none;
@@ -1052,6 +1031,7 @@
     }
 }
 
+/* telas até 860px de largura */
 @media screen and (max-width: 860px) {
     .cta .side {
         flex-direction: column;
@@ -1108,6 +1088,7 @@
     }
 }
 
+/* telas até 600px de largura - celulares */
 @media screen and (max-width: 600px) {
     .chat {
         right: 20px;
