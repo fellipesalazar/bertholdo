@@ -428,6 +428,18 @@
                     $(".open-chat").removeClass("bottom");
                 }
             });
+
+            $("#toggleOn").click(function(){
+                $(this).hide();
+                $("#toggleOff").show().css("display","flex");
+                $(".menu-mobile").fadeIn(250).css("display","flex");
+            });
+
+            $("#toggleOff").click(function(){
+                $(this).hide();
+                $("#toggleOn").show().css("display","flex");
+                $(".menu-mobile").fadeOut(250);
+            });
         
     </script>
 </body>
