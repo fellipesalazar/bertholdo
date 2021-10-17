@@ -3,8 +3,8 @@
 Projeto criado para o teste de conhecimentos técnicos do processo seletivo para Desenvolvedor Front-end da Bertholdo.
 
 #### Tecnologias utilizadas:
-- HTML5
-- CSS3
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JQuery](https://jquery.com/)
 
 #### Plugins, bibliotecas e CDNs utilizados:
