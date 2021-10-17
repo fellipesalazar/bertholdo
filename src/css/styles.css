@@ -936,7 +936,7 @@
     color: #fff;
     font-size: 22px;
     border-radius: 50%;
-    display: flex !important;
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -1204,5 +1204,9 @@
 
     .back-to-top {
         left: 20px;
+    }
+
+    .open-chat {
+        display: flex !important;
     }
 }
