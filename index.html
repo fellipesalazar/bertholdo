@@ -341,6 +341,7 @@
             </div>
         </footer>
         <i class="go-to-whats fab fa-whatsapp"></i>
+        <i class="open-chat far fa-comment"></i>
     </div>
     <script>
     
@@ -421,8 +422,10 @@
             $(window).scroll(function() {
                 if($(window).scrollTop() + $(window).height() > getDocHeight() - 100) {
                     $(".go-to-whats").addClass("bottom");
+                    $(".open-chat").addClass("bottom");
                 }else{
                     $(".go-to-whats").removeClass("bottom");
+                    $(".open-chat").removeClass("bottom");
                 }
             });
         
