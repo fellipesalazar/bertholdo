@@ -949,6 +949,10 @@
     bottom: 80px;
 }
 
+.open-chat.open {
+    bottom: 410px;
+}
+
 .open-chat:hover {
     transform: scale(1.2)
 }

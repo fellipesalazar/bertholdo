@@ -395,8 +395,8 @@
 
             $('.phone').mask(phoneMaskBehavior, phoneOptions);
 
-            $(".chat-header").click(function(){
-                $(".chat, .chat-header .fas").toggleClass("open");
+            $(".chat-header, .open-chat").click(function(){
+                $(".chat, .chat-header .fas, .open-chat").toggleClass("open");
             });
 
             $(".back-to-top").click(function(){
@@ -439,10 +439,6 @@
                 $(this).hide();
                 $("#toggleOn").show().css("display","flex");
                 $(".menu-mobile").fadeOut(250);
-            });
-
-            $(".open-chat").click(function(){
-                $(".chat, .chat-header .fas").addClass("open");
             });
 
         
